@@ -1,5 +1,6 @@
 .projects-index {
   width: min(920px, 100%);
+  min-height: 100%;
   margin: 0 auto;
 }
 
@@ -26,22 +27,6 @@
   max-width: 58ch;
   margin: 0 auto;
   text-align: center;
-}
-
-.masonry-ornament {
-  display: grid;
-  place-items: center;
-  height: clamp(2.25rem, 5vh, 3.25rem);
-  margin: 0 auto .65rem;
-  overflow: hidden;
-}
-
-.masonry-ornament img {
-  display: block;
-  width: auto;
-  height: 100%;
-  max-width: 48%;
-  opacity: .2;
 }
 
 .works-list {
