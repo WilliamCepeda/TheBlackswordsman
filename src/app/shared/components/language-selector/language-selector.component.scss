@@ -1,0 +1,15 @@
+.language {
+  display: flex;
+  gap: .35rem;
+  padding: .5rem;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+.active {
+  color: var(--accent);
+  font-weight: 700;
+}

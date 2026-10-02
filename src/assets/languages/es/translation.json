@@ -1,0 +1,508 @@
+{
+  "navigation": {
+    "home": "Portada",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "book": {
+    "open": "Comenzar viaje",
+    "explore": "Desliza para explorar",
+    "motto": "El arte y la técnica, unidos por el propósito"
+  },
+  "home": {
+    "eyebrow": "Portfolio personal · 2026",
+    "title": "Desarrollo con",
+    "titleAccent": "propósito.",
+    "subtitle": "Construyo experiencias digitales donde convergen la automatización industrial, los gemelos digitales, el 3D y el desarrollo full-stack.",
+    "cta": "Ver proyectos",
+    "contact": "Hablemos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraphs": {
+      "intro": "Soy una persona apasionada por el trabajo, la literatura y la tecnología. Me gusta analizar las cosas, entender cómo funcionan y, sobre todo, comprender el porqué detrás de ellas. La programación ha encajado especialmente bien con esta forma de pensar, ya que es un campo en constante evolución y con muchísimo conocimiento por adquirir: buenas prácticas, patrones de diseño, arquitecturas de software, nuevas tecnologías y diferentes formas de abordar y resolver problemas.",
+      "backend": "He participado en proyectos de gran envergadura tanto del lado servidor como del lado cliente. En <strong>backend</strong>, he trabajado en el modelado y procesamiento de datos, diseño de arquitecturas y APIs, comunicación entre servicios, concurrencia, integraciones con sistemas externos y testing, prestando especial atención a aspectos como la escalabilidad, mantenibilidad y separación de responsabilidades.",
+      "frontend": "En <strong>frontend</strong>, he desarrollado aplicaciones complejas poniendo especial atención en la arquitectura y organización del código, diseño de componentes reutilizables, gestión del estado y de flujos de datos, comunicación con servicios backend, rendimiento, mantenibilidad y experiencia de usuario.",
+      "system": "Más allá de implementar funcionalidades, me interesa comprender el sistema en su conjunto, participar en decisiones técnicas y arquitectónicas, analizar diferentes soluciones y sus compromisos, detectar posibles problemas de diseño y buscar soluciones que permitan que el software continúe evolucionando de forma sostenible a medida que aumenta su complejidad."
+    },
+    "virtuesTitle": "Virtudes",
+    "virtues": {
+      "proactivity": {
+        "title": "Proactividad",
+        "description": "Me adelanto a las necesidades, propongo mejoras y convierto las ideas en acciones concretas."
+      },
+      "discipline": {
+        "title": "Disciplina",
+        "description": "Me enfoco en la mejora continua y en entregar trabajo de calidad."
+      },
+      "purpose": {
+        "title": "Propósito",
+        "description": "Comienzo entendiendo el contexto, el usuario y el impacto esperado."
+      },
+      "collaboration": {
+        "title": "Colaboración",
+        "description": "Creo en el poder de los equipos y en compartir conocimiento."
+      }
+    }
+  },
+  "experience": {
+    "title": "Mi Viaje",
+    "intro": "Hasta ahora, el camino que he recorrido ha sido una Odisea, pero, a pesar de todo, siempre he aprendido algo.",
+    "items": {
+      "middleDegree": {
+        "role": "Ciclo Formativo de Grado Medio, Sistemas Microinformáticos y Redes",
+        "summary": "Hardware, sistemas operativos, aplicaciones web y ofimáticas.",
+        "company": "Escola del Treball",
+        "period": "2021 — 2023"
+      },
+      "internship": {
+        "role": "Empleado de prácticas",
+        "details": {
+          "installation": "Instalación, configuración y mantenimiento de equipos informáticos.",
+          "diagnostics": "Diagnóstico y resolución de incidencias de hardware y software.",
+          "support": "Soporte técnico a usuarios y preparación de puestos de trabajo.",
+          "documentation": "Documentación de procedimientos e incidencias.",
+          "zabbix": "Uso de <strong>Zabbix</strong> para monitorizar la red.",
+          "ansible": "Automatización de configuración y administración de sistemas e infraestructura mediante <strong>Ansible</strong>."
+        },
+        "company": "Canòdrom - Ateneu d'Innovació Digital i Democràtica",
+        "period": "2021 — 2022"
+      },
+      "higherDegree": {
+        "role": "Ciclo Formativo de Grado Superior, Desarrollo de Aplicaciones Multiplataforma",
+        "details": {
+          "reactNative": "Desarrollo de aplicaciones móviles multiplataforma con <strong>React Native</strong>, integradas con servicios backend desarrollados en <strong>Java</strong>.",
+          "android": "Desarrollo de aplicaciones Android nativas con <strong>Java y Android Studio</strong>, implementando interfaces, navegación, gestión y visualización de datos.",
+          "spring": "Desarrollo de aplicaciones backend con <strong>Java y Spring Boot</strong>, diseñando servicios y lógica de aplicación.",
+          "database": "Diseño y persistencia de datos con <strong>MySQL</strong>, utilizando <strong>Hibernate</strong> como ORM y entornos contenerizados con <strong>Docker</strong>.",
+          "patterns": "Aplicación de patrones y principios de diseño de software como <strong>MVC y DAO</strong>, separando responsabilidades entre presentación, lógica y acceso a datos.",
+          "odoo": "Desarrollo y personalización de módulos en <strong>Odoo</strong>, incluyendo modificación de modelos, tablas y configuración del sistema.",
+          "unity": "Desarrollo de videojuegos <strong>2D y 3D con Unity</strong>, trabajando con físicas, movimiento de personajes, interacción, escenas y creación e integración de sprites.",
+          "chess": "Desarrollo de un <strong>juego de ajedrez en Python con interfaz gráfica</strong>, implementando la lógica del juego y la interacción con el usuario.",
+          "robots": "Programación de <strong>brazos robóticos Universal Robots</strong> e integración software para la automatización del movimiento y manipulación de piezas de ajedrez.",
+          "integration": "Integración de diferentes tecnologías <strong>frontend, backend, bases de datos y sistemas físicos</strong>, adquiriendo una visión completa del ciclo de desarrollo de una aplicación."
+        },
+        "company": "Escola del Treball",
+        "period": "2023 — 2025"
+      },
+      "current": {
+        "role": "Ingeniero de Software",
+        "summary": "<strong>Desarrollo de software para entornos industriales y sistemas distribuidos, participando en el diseño, arquitectura e implementación de soluciones frontend y backend, integraciones, comunicaciones en tiempo real e infraestructura.</strong>",
+        "details": {
+          "architecture": "<strong>Diseño y desarrollo de arquitecturas de software</strong> aplicando Arquitectura Hexagonal, Domain-Driven Design (DDD), CQRS, TDD, principios SOLID, Clean Code y patrones de diseño, apoyándome en UML para el diseño y documentación de soluciones.",
+          "backend": "<strong>Desarrollo backend con TypeScript/JavaScript y Node.js</strong>, implementando lógica de aplicación, APIs REST, servicios HTTP/HTTPS, WebSockets, procesamiento de datos, persistencia e integraciones con sistemas externos.",
+          "apiContracts": "<strong>Diseño de APIs RESTful y contratos de comunicación</strong>, incluyendo modelado de recursos, DTOs, validación, gestión de errores y separación entre dominio, aplicación e infraestructura.",
+          "eventDriven": "<strong>Desarrollo de sistemas event-driven y arquitecturas distribuidas</strong>, trabajando con comunicación asíncrona, productores, consumidores, colas, eventos y procesamiento de mensajes mediante <strong>Azure Event Hubs, RabbitMQ y Kafka</strong>.",
+          "websockets": "<strong>Desarrollo de comunicaciones en tiempo real mediante WebSockets</strong>, gestionando suscripciones, propagación reactiva de cambios y actualización eficiente de datos entre backend y frontend.",
+          "frontend": "<strong>Desarrollo frontend con Angular y Vue.js</strong>, trabajando con arquitecturas basadas en componentes, servicios, programación reactiva, gestión de estado y flujos de datos en tiempo real.",
+          "three": "<strong>Amplia experiencia con Three.js y gráficos 3D en aplicaciones web</strong>, incluyendo gestión de escenas, cámaras, renderizado, interacción, optimización y desarrollo de herramientas para importación y visualización de modelos 3D, con soporte para múltiples formatos y extensiones.",
+          "industrial": "<strong>Desarrollo de software industrial e integración de dispositivos</strong> mediante protocolos como <strong>KNX, Modbus, BACnet, OPC UA y MQTT</strong>, trabajando con lectura/escritura de datos, comunicación con dispositivos y monitorización en tiempo real.",
+          "nodeRed": "<strong>Experiencia avanzada con Node-RED</strong>, desarrollando flujos de integración, pruebas de concepto y <strong>nodos personalizados</strong>, especialmente para comunicaciones industriales, procesamiento de datos e integración entre sistemas.",
+          "mqtt": "<strong>Diseño y validación de comunicaciones MQTT mediante EMQX</strong>, incluyendo gestión y monitorización de clientes, conexiones, topics y sesiones, así como pruebas de carga y comportamiento del broker.",
+          "security": "<strong>Implementación de comunicaciones seguras mediante TLS/mTLS</strong>, trabajando con certificados, autoridades certificadoras, autenticación mutua cliente-servidor y comunicaciones cifradas.",
+          "testing": "<strong>Diseño y ejecución de pruebas de software</strong>, aplicando TDD y desarrollando pruebas unitarias, de integración y end-to-end para validar componentes, servicios y flujos completos de aplicación.",
+          "cicd": "<strong>Gestión de CI/CD con Azure DevOps</strong>, configurando y manteniendo pipelines de build, testing y despliegue de aplicaciones, así como procesos de entrega en entornos cloud.",
+          "azure": "<strong>Experiencia con Azure y servicios cloud</strong>, especialmente en integración de aplicaciones, mensajería, procesamiento de eventos y despliegue de soluciones.",
+          "docker": "<strong>Desarrollo y contenerización de aplicaciones mediante Docker</strong>, trabajando con servicios, configuración de entornos y despliegue reproducible de componentes de software.",
+          "cpp": "<strong>Desarrollo de software con C++</strong>, trabajando directamente con APIs y librerías del sistema operativo, así como integración con componentes nativos y recursos de bajo nivel.",
+          "languages": "<strong>Desarrollo de aplicaciones y herramientas con C#</strong>, además de experiencia con <strong>Python, TypeScript, JavaScript y C++</strong> en diferentes contextos de aplicación.",
+          "integration": "<strong>Integración frontend-backend y comunicación entre sistemas heterogéneos</strong>, combinando APIs, WebSockets, sistemas de mensajería, protocolos industriales y servicios cloud.",
+          "decisions": "<strong>Análisis y toma de decisiones técnicas</strong>, evaluando alternativas arquitectónicas, mantenibilidad, rendimiento, escalabilidad, seguridad, acoplamiento y evolución del software.",
+          "coordination": "<strong>Coordinación técnica y planificación de desarrollos</strong>, participando en definición de soluciones, división de tareas, seguimiento técnico y colaboración con equipos multidisciplinares.",
+          "mongodb": "<strong>Experiencia con MongoDB</strong>, trabajando con modelado de documentos, consultas, agregaciones, índices, optimización, persistencia de grandes volúmenes de datos y políticas de retención."
+        },
+        "company": "NechiGroup",
+        "period": "2025 — Actualidad"
+      },
+      "informaticsDegree": {
+        "role": "Grado en Ingeniería Informática",
+        "company": "Universitat Oberta de Catalunya",
+        "period": "2026 — Actualidad"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "intro": "Una selección de trabajos que representan mi recorrido por diferentes áreas de la ingeniería de software.",
+    "selectedWorks": "Obras seleccionadas",
+    "project": "Proyecto",
+    "backToIndex": "Volver a proyectos",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "pageNavigation": "Navegación por las páginas del proyecto",
+    "challengeTitle": "El desafío",
+    "myRole": "Mi rol",
+    "contributionTitle": "Mi contribución",
+    "responsibilities": "Responsabilidades",
+    "engineering": "Ingeniería",
+    "flowTitle": "Flujo técnico",
+    "technologies": "Tecnologías",
+    "challenges": "Retos",
+    "resultTitle": "Resultado",
+    "pages": {
+      "intro": "Introducción",
+      "challenge": "Desafío",
+      "contribution": "Contribución",
+      "stack": "Stack",
+      "result": "Resultado"
+    },
+    "items": {
+      "realTimeIndustrialPlatform": {
+        "title": "Monitor industrial",
+        "description": "Aplicación dinámica de monitorización industrial que actualiza tags del PLC en tiempo real y renderiza pantallas configurables mediante definiciones JSON.",
+        "period": "Proyecto profesional",
+        "category": "Profesional · Monitorización industrial · Full-stack",
+        "challenge": "Conectar las lecturas del PLC con una interfaz de monitorización reactiva manteniendo un backend mantenible, una comunicación en tiempo real y unas pantallas configurables sin codificar cada vista.",
+        "role": {
+          "backend": "Desarrollo backend",
+          "architecture": "Arquitectura de software",
+          "frontend": "Desarrollo frontend",
+          "integration": "Integración industrial y cloud"
+        },
+        "contribution": "Participé en toda la pila: desarrollando APIs backend y comunicación en tiempo real, integrando servicios de eventos y persistencia, y creando servicios, componentes y un renderer SVG en Angular impulsado por configuración JSON.",
+        "responsibilities": {
+          "api": "API con Node.js y TypeScript",
+          "architecture": "Arquitectura Hexagonal, DDD y CQRS",
+          "realtime": "Comunicación WebSocket con el frontend",
+          "frontend": "Servicios y componentes Angular",
+          "renderer": "Renderer SVG dinámico mediante configuración JSON",
+          "cloud": "Despliegue en Azure y pipelines de producción"
+        },
+        "workflow": {
+          "plc": "Lecturas del PLC",
+          "backend": "Procesamiento y dominio backend",
+          "events": "Azure Event Bus",
+          "frontend": "Actualización del frontend en tiempo real"
+        },
+        "challenges": {
+          "realtime": "Actualización de tags en tiempo real",
+          "architecture": "Arquitectura distribuida",
+          "configurability": "Pantallas industriales configurables",
+          "delivery": "Entrega en producción"
+        },
+        "stack": {
+          "backend": "Backend",
+          "frontend": "Frontend",
+          "cloud": "Cloud y entrega"
+        },
+        "result": "Una aplicación configurable de monitorización industrial capaz de recibir datos del PLC, procesarlos mediante un backend estructurado y actualizar pantallas SVG dinámicas en tiempo real.",
+        "outcomes": {
+          "monitoring": "Monitorización industrial en tiempo real",
+          "screens": "Pantallas reutilizables configuradas mediante JSON",
+          "delivery": "Despliegue cloud con pipelines de producción"
+        }
+      },
+      "interactive3dEngineeringTool": {
+        "title": "Gemelo digital KNX",
+        "description": "Gemelo digital de una instalación KNX que combina un backend en Node.js, un frontend en Angular y una aplicación local de escritorio con Electron.",
+        "period": "Proyecto profesional",
+        "category": "Profesional · Gemelo digital · KNX",
+        "challenge": "Construir un gemelo digital mantenible que conecte una instalación industrial con una interfaz reactiva y un entorno de escritorio local, manteniendo una arquitectura backend estructurada y extensible.",
+        "role": {
+          "backend": "Desarrollo backend",
+          "frontend": "Desarrollo frontend",
+          "desktop": "Aplicación de escritorio Electron",
+          "architecture": "Arquitectura de software"
+        },
+        "contribution": "Participé en el backend y el frontend y desarrollé la capa de Electron: desde casos de uso, endpoints y adaptadores hasta signals de Angular, estructura de componentes, tipado de eventos IPC y pipelines de generación del ejecutable.",
+        "responsibilities": {
+          "architecture": "Arquitectura Hexagonal, DDD y CQRS",
+          "backend": "Backend con Node.js y TypeScript",
+          "frontend": "Signals de Angular y diseño de componentes",
+          "electron": "Electron, IPC y generación del ejecutable"
+        },
+        "workflow": {
+          "knx": "Instalación KNX",
+          "backend": "Casos de uso y endpoints backend",
+          "frontend": "Frontend Angular reactivo",
+          "electron": "Entorno Electron e IPC"
+        },
+        "challenges": {
+          "architecture": "Arquitectura de extremo a extremo",
+          "reactivity": "Estado reactivo en frontend",
+          "desktop": "Integración de escritorio local",
+          "delivery": "Entrega del ejecutable"
+        },
+        "stack": {
+          "backend": "Backend",
+          "frontend": "Frontend",
+          "desktop": "Aplicación de escritorio"
+        },
+        "result": "Una aplicación local de gemelo digital capaz de representar una instalación KNX mediante un backend Node.js estructurado, una interfaz Angular reactiva y un entorno Electron.",
+        "outcomes": {
+          "backend": "Backend estructurado con casos de uso y adaptadores reutilizables",
+          "frontend": "Interfaz Angular reactiva con componentes reutilizables",
+          "desktop": "IPC tipado y generación automatizada del ejecutable"
+        }
+      },
+      "roboticChess": {
+        "title": "UR Chess",
+        "description": "Sistema que conecta un juego de ajedrez con un brazo robótico para ejecutar físicamente cada movimiento.",
+        "period": "Durante la formación",
+        "category": "Académico · Robótica · Software",
+        "challenge": "Coordinar la lógica del ajedrez, la interfaz y el movimiento seguro del robot, traduciendo cada jugada a posiciones físicas sobre un tablero real.",
+        "role": {
+          "design": "Diseño de la solución",
+          "python": "Programación en Python",
+          "robotics": "Integración robótica"
+        },
+        "contribution": "Implementé la lógica de juego y su interfaz, el protocolo de comunicación y la transformación de movimientos lógicos en secuencias ejecutables por el brazo robótico.",
+        "responsibilities": {
+          "chess": "Motor y reglas de ajedrez",
+          "interface": "Interfaz gráfica",
+          "communication": "Comunicación con el robot",
+          "calibration": "Calibración y pruebas"
+        },
+        "workflow": {
+          "move": "Jugada del usuario",
+          "rules": "Validación de reglas",
+          "coordinates": "Cálculo de coordenadas",
+          "movement": "Movimiento robótico"
+        },
+        "challenges": {
+          "calibration": "Calibración",
+          "safety": "Seguridad",
+          "coordinates": "Coordenadas",
+          "synchronization": "Sincronización"
+        },
+        "stack": {
+          "software": "Software",
+          "robotics": "Robótica",
+          "communication": "Comunicación"
+        },
+        "result": "Un prototipo funcional capaz de validar jugadas y trasladarlas al mundo físico, integrando software, comunicaciones y automatización robótica.",
+        "outcomes": {
+          "integration": "Integración completa entre software y robot",
+          "movements": "Movimientos reproducibles sobre el tablero",
+          "learning": "Aprendizaje práctico de sistemas físicos"
+        }
+      },
+      "unity2dGame": {
+        "title": "RPG en Unity",
+        "description": "Videojuego 2D desarrollado íntegramente en Unity, cubriendo gameplay, recursos visuales, animación y construcción de escenarios.",
+        "period": "Durante la formación",
+        "category": "Académico · Unity · 2D",
+        "challenge": "Convertir una idea de juego en una experiencia jugable coherente coordinando movimientos, sprites, animaciones, fondos y niveles.",
+        "role": {
+          "development": "Desarrollo de videojuegos",
+          "gameplay": "Programación del gameplay",
+          "artIntegration": "Integración de arte y animaciones"
+        },
+        "contribution": "Trabajé en todo el proceso de desarrollo, desde la creación de recursos visuales hasta la implementación de movimientos, animaciones, fondos, escenarios y lógica de juego.",
+        "responsibilities": {
+          "gameplay": "Gameplay y lógica de juego",
+          "sprites": "Creación e integración de sprites",
+          "animation": "Animaciones de personajes",
+          "scenes": "Fondos y escenarios"
+        },
+        "workflow": {
+          "assets": "Recursos visuales",
+          "movement": "Movimientos y controles",
+          "scenes": "Construcción de escenarios",
+          "gameplay": "Integración del gameplay"
+        },
+        "challenges": {
+          "gameFeel": "Sensación de juego",
+          "consistency": "Coherencia visual",
+          "organization": "Organización de escenas",
+          "integration": "Integración de recursos"
+        },
+        "stack": {
+          "engine": "Motor de juego",
+          "visuals": "Recursos visuales",
+          "gameplay": "Gameplay"
+        },
+        "result": "Una experiencia 2D jugable que combina recursos visuales propios con mecánicas interactivas y escenas estructuradas en Unity.",
+        "outcomes": {
+          "gameplay": "Bucle jugable completo",
+          "assets": "Sprites y animaciones integrados",
+          "unity": "Experiencia práctica de desarrollo con Unity"
+        }
+      },
+      "unity3dShooter": {
+        "title": "Shooter 3D en Unity",
+        "description": "Shooter 3D desarrollado en Unity, combinando movimiento del jugador, mecánicas de combate, animaciones y entornos de juego completos.",
+        "period": "Durante la formación",
+        "category": "Académico · Unity · 3D",
+        "challenge": "Construir un shooter 3D coherente integrando control de cámara, movimiento del jugador, combate, físicas y diseño de escenarios.",
+        "role": {
+          "development": "Desarrollo de videojuegos",
+          "gameplay": "Programación del gameplay",
+          "worldBuilding": "Construcción del mundo y escenarios"
+        },
+        "contribution": "Desarrollé los sistemas de juego y los entornos, trabajando en las mismas áreas de principio a fin que en el proyecto 2D: movimientos, animaciones, escenarios, fondos y gameplay.",
+        "responsibilities": {
+          "shooter": "Mecánicas de shooter",
+          "movement": "Movimiento del jugador y cámara",
+          "scenes": "Escenas y entornos 3D",
+          "animation": "Animaciones e interacciones"
+        },
+        "workflow": {
+          "environment": "Construcción del entorno",
+          "player": "Controlador del jugador",
+          "combat": "Mecánicas de combate",
+          "scenes": "Integración de escenas y gameplay"
+        },
+        "challenges": {
+          "camera": "Control de cámara",
+          "physics": "Físicas y colisiones",
+          "pacing": "Ritmo del gameplay",
+          "integration": "Integración de sistemas"
+        },
+        "stack": {
+          "engine": "Motor de juego",
+          "world": "Mundo 3D",
+          "gameplay": "Gameplay"
+        },
+        "result": "Un prototipo funcional de shooter 3D que demuestra la integración de sistemas de juego, entornos tridimensionales y escenas interactivas en Unity.",
+        "outcomes": {
+          "gameplay": "Mecánicas de shooter jugables",
+          "world": "Entornos 3D estructurados",
+          "unity": "Experiencia completa de desarrollo con Unity"
+        }
+      },
+      "yayaRecipes": {
+        "title": "Aplicación de recetas YAYA",
+        "description": "Aplicación de recetas con frontend en React Native y backend en Java, desarrollada como proyecto académico full-stack.",
+        "period": "Durante la formación",
+        "category": "Académico · Full-stack · Móvil",
+        "challenge": "Conectar una experiencia móvil de recetas con un backend capaz de exponer, procesar y persistir los datos de la aplicación.",
+        "role": {
+          "fullStack": "Desarrollo full-stack",
+          "frontend": "Estilos y pantallas frontend",
+          "backend": "Endpoints backend",
+          "database": "Modelado de base de datos"
+        },
+        "contribution": "Participé en toda la pila implementando partes de los estilos del frontend, conectando la aplicación con los servicios backend, creando endpoints y definiendo la persistencia mediante clases con decoradores.",
+        "responsibilities": {
+          "frontend": "Estilos y vistas frontend",
+          "api": "Llamadas a servicios backend",
+          "endpoints": "Desarrollo de endpoints backend",
+          "persistence": "Base de datos y mapeo de entidades"
+        },
+        "workflow": {
+          "mobile": "Aplicación React Native",
+          "api": "Comunicación con la API",
+          "backend": "Backend con Java y Spring Boot",
+          "database": "Persistencia con Hibernate"
+        },
+        "challenges": {
+          "mobile": "Experiencia móvil",
+          "communication": "Comunicación frontend-backend",
+          "model": "Modelado de datos",
+          "integration": "Integración full-stack"
+        },
+        "stack": {
+          "frontend": "Frontend",
+          "backend": "Backend",
+          "persistence": "Persistencia"
+        },
+        "result": "Una aplicación de recetas conectada que combina un cliente móvil con servicios Java y una capa de persistencia mapeada.",
+        "outcomes": {
+          "fullStack": "Experiencia en proyectos full-stack",
+          "api": "Comunicación funcional entre frontend y backend",
+          "persistence": "Mapeo de base de datos con clases anotadas"
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Competencias",
+    "intro": "Una visión estructurada de las tecnologías, herramientas y formas de trabajo que aporto al desarrollo de software.",
+    "categories": {
+      "programming": "Lenguajes de programación y web",
+      "frameworks": "Frameworks y desarrollo",
+      "databases": "Bases de datos y persistencia",
+      "messaging": "Mensajería e IoT",
+      "cloud": "Cloud y DevOps",
+      "integration": "Herramientas e integración",
+      "systems": "Administración de sistemas"
+    },
+    "items": {
+      "programming": {
+        "sql": "SQL",
+        "php": "PHP",
+        "xml": "XML",
+        "cpp": "C++",
+        "javascript": "JavaScript",
+        "csharp": "C#",
+        "html": "HTML",
+        "dotnet": ".NET",
+        "python": "Python",
+        "css": "CSS",
+        "typescript": "TypeScript",
+        "java": "Java",
+        "android": "Android",
+        "mvc": "MVC",
+        "react": "React",
+        "hibernate": "Hibernate",
+        "rest": "APIs REST",
+        "vue": "Vue.js",
+        "postgresql": "PostgreSQL",
+        "mongodb": "MongoDB",
+        "kafka": "Kafka",
+        "mqtt": "MQTT",
+        "azureServiceBus": "Azure Service Bus"
+      },
+      "frameworks": {
+        "aspNet": "ASP.NET",
+        "json": "JSON",
+        "angular": "Angular",
+        "node": "Node.js",
+        "spring": "Spring",
+        "jsp": "JSP",
+        "threeJs": "Three.js"
+      },
+      "databases": {
+        "azure": "Microsoft Azure",
+        "mariaDb": "MariaDB",
+        "mySql": "MySQL"
+      },
+      "messaging": {
+        "rabbitMq": "RabbitMQ",
+        "emqx": "EMQX",
+        "amqp": "AMQP"
+      },
+      "cloud": {
+        "azureDevOps": "Azure DevOps"
+      },
+      "integration": {
+        "nodeRed": "Node-RED",
+        "docker": "Docker"
+      },
+      "systems": {
+        "linux": "Linux",
+        "windows": "Windows"
+      }
+    },
+    "languages": {
+      "title": "Idiomas",
+      "catalan": "Catalán",
+      "english": "Inglés",
+      "spanish": "Castellano"
+    },
+    "methodology": {
+      "title": "Metodología",
+      "scrum": "Scrum",
+      "agile": "Agile"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "email": "Email",
+    "findMe": "Encuéntrame",
+    "profileAlt": "Foto de perfil de Willian Santiago Cepeda Orduz"
+  },
+  "a11y": {
+    "home": "Inicio",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "mainNavigation": "Navegación principal",
+    "chapterNavigation": "Navegación de capítulos",
+    "switchToEnglish": "Cambiar a inglés",
+    "switchToSpanish": "Cambiar a español"
+  }
+}

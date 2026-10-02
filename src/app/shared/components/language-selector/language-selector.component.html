@@ -1,0 +1,10 @@
+<button
+  type="button"
+  class="language"
+  (click)="language.toggle()"
+  [attr.aria-label]="language.current() === 'es' ? ('a11y.switchToEnglish' | translate) : ('a11y.switchToSpanish' | translate)"
+>
+  <span [class.active]="language.current() === 'es'">ES</span>
+  <span aria-hidden="true">/</span>
+  <span [class.active]="language.current() === 'en'">EN</span>
+</button>

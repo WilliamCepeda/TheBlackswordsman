@@ -1,0 +1,133 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 4vh, 3rem);
+  align-items: stretch;
+  min-height: 100%;
+}
+
+.contact-page .chapter-intro {
+  align-self: stretch;
+  text-align: center;
+}
+
+.contact-page .chapter-rule {
+  margin-inline: auto;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(170px, .65fr) minmax(0, 1.35fr);
+  gap: clamp(1.25rem, 3vw, 3rem);
+  align-items: center;
+  width: min(900px, 100%);
+  margin: 0 auto;
+  min-width: 0;
+  padding-top: clamp(1rem, 3vh, 2rem);
+  border-top: 1px solid #a8996855;
+}
+
+.profile-photo {
+  width: min(100%, 280px);
+  aspect-ratio: 4 / 5;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #a89968;
+  background: #c8bea6;
+  box-shadow: 10px 10px 0 #a8996825;
+}
+
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.contact-links {
+  display: grid;
+  gap: .75rem;
+  min-width: 0;
+}
+
+.contact-links .overline {
+  margin: 0 0 .25rem;
+  color: #806b3f;
+}
+
+.contact-link {
+  display: grid;
+  gap: .35rem;
+  min-width: 0;
+  padding: .8rem .9rem;
+  border: 1px solid #a8996870;
+  color: #172238;
+  text-decoration: none;
+  transition: background-color .18s ease, transform .18s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  background: #a8996812;
+  transform: translateX(.2rem);
+  outline: none;
+}
+
+.contact-link > span {
+  color: #806b3f;
+  font-family: var(--font-display);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.contact-link strong {
+  overflow-wrap: anywhere;
+  font-size: clamp(.78rem, 1.1vw, .95rem);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.contact-link strong span {
+  color: #806b3f;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-page {
+    gap: 1rem;
+    align-content: start;
+  }
+
+  .contact-page .chapter-intro {
+    align-self: start;
+  }
+
+  .contact-panel {
+    grid-template-columns: minmax(125px, .8fr) minmax(0, 1.2fr);
+    gap: 1rem;
+    padding-top: 1.25rem;
+  }
+
+  .profile-photo {
+    width: 100%;
+    box-shadow: 6px 6px 0 #a8996825;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: min(72vw, 250px);
+  }
+}

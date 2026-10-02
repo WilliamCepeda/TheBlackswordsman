@@ -1,0 +1,20 @@
+.shell {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100vh;
+  height: 100dvh;
+  max-width: 1720px;
+  margin: auto;
+  padding: 0 clamp(.75rem, 2vw, 2rem);
+  overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .shell {
+    height: 100svh;
+    height: 100dvh;
+    padding-right: max(.5rem, env(safe-area-inset-right));
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: max(.5rem, env(safe-area-inset-left));
+  }
+}

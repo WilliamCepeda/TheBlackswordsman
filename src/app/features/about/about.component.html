@@ -1,0 +1,29 @@
+<app-page>
+  <section class="about-book">
+    <div class="book-page left-page">
+      <p class="section-number">02</p>
+      <h1>{{ 'about.title' | translate }}</h1>
+      <div class="chapter-rule">✦</div>
+      <div class="biography">
+        <p>{{ 'about.paragraphs.intro' | translate }}</p>
+        <p [innerHTML]="'about.paragraphs.backend' | translate"></p>
+        <p [innerHTML]="'about.paragraphs.frontend' | translate"></p>
+        <p>{{ 'about.paragraphs.system' | translate }}</p>
+      </div>
+    </div>
+    <div class="book-page right-page">
+      <h2 class="virtues-title">{{ 'about.virtuesTitle' | translate }}</h2>
+      <div class="virtues">
+        @for (value of values; track value.key) {
+          <article>
+            <span class="virtue-symbol">{{ value.symbol }}</span>
+            <div>
+              <h3>{{ 'about.virtues.' + value.key + '.title' | translate }}</h3>
+              <p>{{ 'about.virtues.' + value.key + '.description' | translate }}</p>
+            </div>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+</app-page>

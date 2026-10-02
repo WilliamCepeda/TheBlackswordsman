@@ -1,0 +1,19 @@
+<app-page>
+  <section class="chapter-layout experience">
+    <div class="chapter-intro"><p class="section-number">03</p><h1>{{ 'experience.title' | translate }}</h1><div class="chapter-rule">✦</div><p class="body-copy">{{ 'experience.intro' | translate }}</p></div>
+    <div class="timeline">
+      @for (item of experiences; track item.periodKey) {
+        <article>
+          <span class="dot"></span>
+          <p class="period">{{ item.periodKey | translate }}</p>
+          <h2>{{ item.roleKey | translate }}</h2>
+          <p class="company">{{ item.companyKey | translate }}</p>
+          @if (item.summaryKey) { <p class="summary" [innerHTML]="item.summaryKey | translate"></p> }
+          @if (item.detailKeys.length) {
+            <ul class="details">@for (detailKey of item.detailKeys; track detailKey) { <li [innerHTML]="detailKey | translate"></li> }</ul>
+          }
+        </article>
+      }
+    </div>
+  </section>
+</app-page>
