@@ -1,0 +1,15 @@
+<header>
+  <app-navigation />
+  <app-language-selector />
+  <button class="menu-toggle" type="button" [attr.aria-label]="'a11y.openMenu' | translate" [attr.aria-expanded]="menuOpen()" (click)="menuOpen.set(true)">
+    <span></span><span></span><span></span>
+  </button>
+
+  @if (menuOpen()) {
+    <div class="menu-panel">
+      <button class="close" type="button" [attr.aria-label]="'a11y.closeMenu' | translate" (click)="menuOpen.set(false)">×</button>
+      <app-navigation variant="menu" (navigated)="menuOpen.set(false)" />
+      <div class="menu-language"><app-language-selector /></div>
+    </div>
+  }
+</header>

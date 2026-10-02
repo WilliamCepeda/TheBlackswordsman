@@ -1,0 +1,9 @@
+<footer>
+  <span class="copyright">© {{ year }} Willian Cepeda</span>
+  <nav [attr.aria-label]="'a11y.chapterNavigation' | translate">
+    @for (item of pages; track item.path; let index = $index) {
+      <a [routerLink]="item.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: item.path === '/' }">0{{ index + 1 }}</a>
+    }
+  </nav>
+  <span class="page">{{ navigation.currentPageLabel() }} / {{ navigation.totalPagesLabel }}</span>
+</footer>

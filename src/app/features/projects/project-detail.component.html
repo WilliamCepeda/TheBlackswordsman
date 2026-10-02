@@ -1,0 +1,111 @@
+<app-page>
+  <section class="project-page">
+    <header class="running-header">
+      <span>{{ sectionNumber() }}</span>
+      <span>{{ 'projects.project' | translate }} {{ project().roman }}</span>
+    </header>
+
+    <div class="page-content">
+      @switch (section()) {
+        @case ('intro') {
+          <div class="project-cover">
+            <p class="overline">{{ 'projects.project' | translate }} {{ project().roman }}</p>
+            <h1>{{ project().title | translate }}</h1>
+            <div class="chapter-rule">◆</div>
+            <p class="project-category">{{ project().category | translate }} · {{ project().period | translate }}</p>
+            <p class="project-summary">{{ project().description | translate }}</p>
+            <div class="concept-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          </div>
+        }
+
+        @case ('challenge') {
+          <div class="project-spread">
+            <article>
+              <p class="overline">{{ 'projects.pages.challenge' | translate }}</p>
+              <h1>{{ 'projects.challengeTitle' | translate }}</h1>
+              <div class="short-rule"></div>
+              <p class="lead">{{ project().challenge | translate }}</p>
+            </article>
+            <aside>
+              <p class="overline">{{ 'projects.myRole' | translate }}</p>
+              <ul class="plain-list">
+                @for (role of project().role; track role) { <li>{{ role | translate }}</li> }
+              </ul>
+            </aside>
+          </div>
+        }
+
+        @case ('contribution') {
+          <div class="project-spread">
+            <article>
+              <p class="overline">{{ 'projects.pages.contribution' | translate }}</p>
+              <h1>{{ 'projects.contributionTitle' | translate }}</h1>
+              <div class="short-rule"></div>
+              <p class="lead">{{ project().contribution | translate }}</p>
+            </article>
+            <aside>
+              <p class="overline">{{ 'projects.responsibilities' | translate }}</p>
+              <ul class="numbered-list">
+                @for (responsibility of project().responsibilities; track responsibility; let index = $index) {
+                  <li><span>0{{ index + 1 }}</span>{{ responsibility | translate }}</li>
+                }
+              </ul>
+            </aside>
+          </div>
+        }
+
+        @case ('stack') {
+          <div class="engineering-page">
+            <div>
+              <p class="overline">{{ 'projects.engineering' | translate }}</p>
+              <h1>{{ 'projects.flowTitle' | translate }}</h1>
+              <ol class="workflow">
+                @for (step of project().workflow; track step) { <li>{{ step | translate }}</li> }
+              </ol>
+            </div>
+            <div>
+              <p class="overline">{{ 'projects.pages.stack' | translate }}</p>
+              <h2>{{ 'projects.technologies' | translate }}</h2>
+              <div class="stack-groups">
+                @for (group of project().stack; track group.label) {
+                  <section>
+                    <h3>{{ group.label | translate }}</h3>
+                    <p>{{ group.items.join(' · ') }}</p>
+                  </section>
+                }
+              </div>
+            </div>
+            <div class="challenge-strip">
+              <p class="overline">{{ 'projects.challenges' | translate }}</p>
+              <p>
+                @for (challenge of project().challenges; track challenge; let last = $last) {
+                  {{ challenge | translate }}@if (!last) { · }
+                }
+              </p>
+            </div>
+          </div>
+        }
+
+        @case ('result') {
+          <div class="result-page">
+            <p class="overline">{{ 'projects.pages.result' | translate }}</p>
+            <h1>{{ 'projects.resultTitle' | translate }}</h1>
+            <div class="chapter-rule">◆</div>
+            <p class="lead">{{ project().result | translate }}</p>
+            <div class="outcomes">
+              @for (outcome of project().outcomes; track outcome; let index = $index) {
+                <article><span>0{{ index + 1 }}</span><p>{{ outcome | translate }}</p></article>
+              }
+            </div>
+          </div>
+        }
+      }
+    </div>
+
+    <nav class="project-navigation" [attr.aria-label]="'projects.pageNavigation' | translate">
+      <a [routerLink]="bookPath(navigation.previousPath())">← {{ 'projects.previous' | translate }}</a>
+      <a class="index-link" routerLink="/projects">{{ 'projects.backToIndex' | translate }}</a>
+      <a [routerLink]="bookPath(navigation.nextPath())">{{ 'projects.next' | translate }} →</a>
+    </nav>
+  </section>
+</app-page>

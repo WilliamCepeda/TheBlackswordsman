@@ -1,0 +1,12 @@
+:host{display:block;min-width:0;border-top:1px solid var(--line)}
+footer{height:100%;min-height:3rem;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;color:var(--muted);font-size:.7rem;letter-spacing:.08em}
+.page{justify-self:end;color:var(--accent)}
+nav{display:flex;gap:1.5rem}
+nav a{color:var(--muted);text-decoration:none;padding:.75rem .1rem;border-bottom:1px solid transparent}
+nav a.active{color:var(--accent);border-color:var(--accent)}
+@media(max-width:767.98px){
+  footer{min-height:2.65rem;grid-template-columns:1fr auto;gap:.4rem;font-size:.6rem}
+  .copyright,.page{display:none}
+  nav{grid-column:1/-1;justify-content:center;gap:clamp(.75rem,6vw,1.5rem)}
+  nav a{padding:.55rem .1rem}
+}

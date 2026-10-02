@@ -1,0 +1,155 @@
+.experience {
+  grid-template-columns: minmax(240px, .8fr) minmax(0, 1.35fr);
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.chapter-intro {
+  isolation: isolate;
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 0;
+  padding: clamp(.5rem, 2vh, 1.5rem) 0 clamp(2rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.chapter-intro::after {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 50%;
+  width: min(78%, 330px);
+  aspect-ratio: 1;
+  background: url('/assets/svg/ancient-greek-helmet-1-svgrepo-com.svg') center bottom / contain no-repeat;
+  opacity: .13;
+  transform: translateX(-50%);
+  content: '';
+  pointer-events: none;
+}
+
+.chapter-intro .body-copy {
+  max-width: 34ch;
+  margin-inline: auto;
+  color: #4f473b;
+  font-size: clamp(1rem, 1.25vw, 1.15rem);
+  line-height: 1.55;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 1px solid #82724d;
+}
+
+.timeline article {
+  position: relative;
+  padding: 0 0 2rem;
+}
+
+.timeline article:last-child {
+  padding-bottom: .5rem;
+}
+
+.dot {
+  position: absolute;
+  top: .3rem;
+  left: -2.34rem;
+  width: .7rem;
+  height: .7rem;
+  border: 2px solid #dcd2b8;
+  border-radius: 50%;
+  background: #172238;
+  box-shadow: 0 0 0 1px #172238;
+}
+
+.period {
+  margin: 0;
+  color: #806b3f;
+  font-family: var(--font-display);
+  font-size: .72rem;
+  letter-spacing: .06em;
+}
+
+.timeline h2 {
+  margin: .25rem 0;
+  font-size: clamp(.85rem, 1.15vw, 1.05rem);
+  line-height: 1.35;
+}
+
+.company {
+  margin: 0;
+  color: #625848;
+  font-style: italic;
+}
+
+.summary {
+  margin: .5rem 0 0;
+  color: #403a31;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.details {
+  display: grid;
+  gap: .35rem;
+  margin: .7rem 0 0;
+  padding-left: 1.1rem;
+  color: #403a31;
+  font-size: .84rem;
+  line-height: 1.4;
+}
+
+.details li::marker {
+  color: #8c7444;
+}
+
+@media (max-width: 900px) {
+  .experience {
+    grid-template-columns: minmax(190px, .65fr) minmax(0, 1.35fr);
+    gap: 2rem;
+  }
+
+  .chapter-intro {
+    min-height: 0;
+  }
+
+  .chapter-intro::after {
+    width: 88%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .experience {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-intro {
+    position: relative;
+    top: auto;
+    min-height: 0;
+    padding: .5rem 0 2rem;
+  }
+
+  .chapter-intro::after {
+    width: 180px;
+    opacity: .08;
+  }
+
+  .timeline {
+    margin-top: .5rem;
+    padding-left: 1.5rem;
+  }
+
+  .dot {
+    left: -1.84rem;
+  }
+
+  .details {
+    font-size: .9rem;
+  }
+}

@@ -1,0 +1,152 @@
+.projects-index {
+  width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.index-heading {
+  margin-bottom: clamp(1.5rem, 4vh, 3rem);
+  text-align: center;
+}
+
+.index-heading h1 {
+  font-size: clamp(2.2rem, 4.5vw, 4.6rem);
+}
+
+.index-heading .chapter-rule {
+  margin: 1rem auto;
+}
+
+.index-heading .overline {
+  margin: 0 0 .6rem;
+  color: #806b3f;
+  font-size: clamp(.78rem, 1.25vw, 1rem);
+}
+
+.index-heading .body-copy {
+  max-width: 58ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.masonry-ornament {
+  display: grid;
+  place-items: center;
+  height: clamp(2.25rem, 5vh, 3.25rem);
+  margin: 0 auto .65rem;
+  overflow: hidden;
+}
+
+.masonry-ornament img {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 48%;
+  opacity: .2;
+}
+
+.works-list {
+  border-top: 1px solid #a89968;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr) 2rem;
+  gap: 1.25rem;
+  align-items: center;
+  padding: clamp(1rem, 2.5vh, 1.6rem) .35rem;
+  border-bottom: 1px solid #a8996870;
+  color: #172238;
+  text-decoration: none;
+  transition: background-color .18s ease, padding-inline .18s ease;
+}
+
+.work:hover,
+.work:focus-visible {
+  padding-inline: .8rem;
+  background: #a8996812;
+  outline: none;
+}
+
+.work-number,
+.work-arrow {
+  color: #8c7444;
+  font-family: var(--font-display);
+}
+
+.work-number {
+  align-self: start;
+  padding-top: .15rem;
+}
+
+.work-copy,
+.work-title {
+  display: block;
+  min-width: 0;
+}
+
+.work-title {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.work-title h2 {
+  margin: 0;
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  text-transform: uppercase;
+}
+
+.work-title time,
+.category,
+.technology-line {
+  color: #665f50;
+  font-size: .86rem;
+}
+
+.category,
+.technology-line {
+  display: block;
+  margin-top: .3rem;
+}
+
+.technology-line {
+  color: #806b3f;
+}
+
+.work-arrow {
+  font-size: 1.25rem;
+  transition: transform .18s ease;
+}
+
+.work:hover .work-arrow,
+.work:focus-visible .work-arrow {
+  transform: translateX(.25rem);
+}
+
+@media (max-width: 767.98px) {
+  .projects-index {
+    width: 100%;
+  }
+
+  .index-heading {
+    margin-bottom: 1.25rem;
+  }
+
+  .work {
+    grid-template-columns: 2.25rem minmax(0, 1fr) 1.25rem;
+    gap: .65rem;
+    padding-block: 1rem;
+  }
+
+  .work-title {
+    display: grid;
+    gap: .2rem;
+  }
+
+  .work-title time,
+  .category,
+  .technology-line {
+    font-size: .78rem;
+  }
+}

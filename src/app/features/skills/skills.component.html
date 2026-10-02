@@ -1,0 +1,50 @@
+<app-page>
+  <section class="chapter-layout skills">
+    <div class="chapter-intro">
+      <p class="section-number">05</p>
+      <h1>{{ 'skills.title' | translate }}</h1>
+      <div class="chapter-rule">✦</div>
+      <p class="body-copy">{{ 'skills.intro' | translate }}</p>
+      <img
+        class="skills-wall"
+        src="/assets/svg/greek-parthenon-style-svgrepo-com.svg"
+        alt=""
+        aria-hidden="true"
+      >
+    </div>
+    <div class="skill-content">
+      <div class="competency-grid">
+        @for (group of competencyGroups; track group.key; let index = $index) {
+          <article class="competency-card">
+            <header>
+              <span class="group-number">0{{ index + 1 }}</span>
+              <h2>{{ 'skills.categories.' + group.key | translate }}</h2>
+            </header>
+            <ul class="skill-tags">
+              @for (skill of group.items; track skill) {
+                <li>{{ 'skills.items.' + group.key + '.' + skill | translate }}</li>
+              }
+            </ul>
+          </article>
+        }
+      </div>
+
+      <div class="skills-footer">
+        <article class="support-card">
+          <header class="support-card-header">
+            <span class="group-number">08</span>
+            <p class="overline">{{ 'skills.languages.title' | translate }}</p>
+          </header>
+          <ul class="skill-tags">@for (language of languages; track language) { <li>{{ 'skills.languages.' + language | translate }}</li> }</ul>
+        </article>
+        <article class="support-card">
+          <header class="support-card-header">
+            <span class="group-number">09</span>
+            <p class="overline">{{ 'skills.methodology.title' | translate }}</p>
+          </header>
+          <ul class="skill-tags">@for (method of methodology; track method) { <li>{{ 'skills.methodology.' + method | translate }}</li> }</ul>
+        </article>
+      </div>
+    </div>
+  </section>
+</app-page>

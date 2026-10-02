@@ -1,0 +1,13 @@
+<nav [attr.aria-label]="'a11y.mainNavigation' | translate" [class.menu]="variant() === 'menu'">
+  @for (item of items; track item.path) {
+    <a
+      [routerLink]="item.path"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+      (click)="navigated.emit()"
+    >
+      <span class="number">0{{ $index + 1 }}</span>
+      {{ item.label | translate }}
+    </a>
+  }
+</nav>

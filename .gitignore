@@ -1,0 +1,12 @@
+/node_modules
+/dist
+/.angular
+/.cache
+/coverage
+/.vscode/*
+!/.vscode/extensions.json
+!/.vscode/launch.json
+!/.vscode/tasks.json
+.DS_Store
+Thumbs.db
+npm-debug.log*
