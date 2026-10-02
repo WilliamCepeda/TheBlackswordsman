@@ -8,10 +8,6 @@
       <p class="body-copy">{{ 'projects.intro' | translate }}</p>
     </header>
 
-    <div class="masonry-ornament" aria-hidden="true">
-      <img src="/assets/svg/muro.svg" alt="">
-    </div>
-
     <div class="works-list">
       @for (project of projects; track project.id; let index = $index) {
         <a class="work" [routerLink]="['/projects', project.id, 'intro']">
